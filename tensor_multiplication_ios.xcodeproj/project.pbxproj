@@ -13,6 +13,8 @@
 		41CEFD0A28122C6700594CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CEFD0828122C6700594CDE /* Main.storyboard */; };
 		41CEFD0C28122C6900594CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41CEFD0B28122C6900594CDE /* Assets.xcassets */; };
 		41CEFD0F28122C6900594CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CEFD0D28122C6900594CDE /* LaunchScreen.storyboard */; };
+		41CEFD182812323700594CDE /* SLTensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEFD172812323700594CDE /* SLTensor.swift */; };
+		41CEFD1C281238E100594CDE /* SLTensorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEFD1B281238E100594CDE /* SLTensorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		41CEFD0B28122C6900594CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41CEFD0E28122C6900594CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41CEFD1028122C6900594CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41CEFD172812323700594CDE /* SLTensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTensor.swift; sourceTree = "<group>"; };
+		41CEFD1B281238E100594CDE /* SLTensorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLTensorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		41CEFD0128122C6700594CDE /* tensor_multiplication_ios */ = {
 			isa = PBXGroup;
 			children = (
-				41CEFD0228122C6700594CDE /* AppDelegate.swift */,
-				41CEFD0428122C6700594CDE /* SceneDelegate.swift */,
-				41CEFD0628122C6700594CDE /* ViewController.swift */,
+				41CEFD1A2812327900594CDE /* Delegates */,
+				41CEFD192812326700594CDE /* Controllers */,
+				41CEFD16281231D400594CDE /* Tensor */,
 				41CEFD0828122C6700594CDE /* Main.storyboard */,
 				41CEFD0B28122C6900594CDE /* Assets.xcassets */,
 				41CEFD0D28122C6900594CDE /* LaunchScreen.storyboard */,
 				41CEFD1028122C6900594CDE /* Info.plist */,
 			);
 			path = tensor_multiplication_ios;
+			sourceTree = "<group>";
+		};
+		41CEFD16281231D400594CDE /* Tensor */ = {
+			isa = PBXGroup;
+			children = (
+				41CEFD172812323700594CDE /* SLTensor.swift */,
+				41CEFD1B281238E100594CDE /* SLTensorHelper.swift */,
+			);
+			path = Tensor;
+			sourceTree = "<group>";
+		};
+		41CEFD192812326700594CDE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41CEFD0628122C6700594CDE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41CEFD1A2812327900594CDE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				41CEFD0228122C6700594CDE /* AppDelegate.swift */,
+				41CEFD0428122C6700594CDE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +170,9 @@
 			files = (
 				41CEFD0728122C6700594CDE /* ViewController.swift in Sources */,
 				41CEFD0328122C6700594CDE /* AppDelegate.swift in Sources */,
+				41CEFD1C281238E100594CDE /* SLTensorHelper.swift in Sources */,
 				41CEFD0528122C6700594CDE /* SceneDelegate.swift in Sources */,
+				41CEFD182812323700594CDE /* SLTensor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
