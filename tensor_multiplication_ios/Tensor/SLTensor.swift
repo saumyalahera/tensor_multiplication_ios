@@ -31,6 +31,4 @@ public class SLTensor: NSObject {
         self.name = name
         self.shape = shape
     }
-    
-    
 }

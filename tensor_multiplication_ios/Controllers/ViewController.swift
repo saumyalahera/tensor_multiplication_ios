@@ -7,23 +7,21 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
 
     typealias tf = SLTensorHelper
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         let tensor1 = SLTensor(values: [11,2,3,4], shape: [2,2], name: "t1")
         let tensor2 = SLTensor(values: [1,2,3,4], shape: [2,2], name: "t2")
-        let tensor3 = tf.matmul(tensorA: tensor1, tensorB: tensor2, name: "t3")
         
+        //Multiplication
+        let tensor3 = tf.matmul(tensorA: tensor1, tensorB: tensor2, name: "t3")
         //Assuming there will always be not nil values
         print(tensor3.values!)
     }
-
 
 }
 

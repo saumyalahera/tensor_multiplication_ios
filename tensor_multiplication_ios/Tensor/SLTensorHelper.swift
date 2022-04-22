@@ -8,6 +8,7 @@
 import UIKit
 import MLCompute
 
+//MARK: - Operations
 class SLTensorHelper: NSObject {
 
     static func tensorOperation(tensors:[SLTensor], layer:MLCLayer, outputShape: [Int]) -> [Float] {
@@ -64,9 +65,10 @@ class SLTensorHelper: NSObject {
     }
 }
 
-//MARK: - Operations
+//MARK: - Multiplication
 extension SLTensorHelper {
     
+    /*This is needed to check the rank for multiplication*/
     static func getMatmulOutputShape(tensorAShape: [Int], tensorBShape: [Int]) -> [Int]{
         var outputShape = tensorAShape //tensorA.shape.reduce(1, {$0*$1}) //This can also work for 2 same shape size values. It is not recommended
         if(outputShape.count == 2) {
